@@ -1,0 +1,107 @@
+
+
+.add-book-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1b1b2f, #232946, #3a3a5e);
+  color: #eaeaea;
+  padding: 20px;
+  animation: backgroundAnimation 8s infinite alternate ease-in-out;
+}
+/* Normalized Background Animation */
+@keyframes backgroundAnimation {
+  0% {
+    background: linear-gradient(135deg, #4d4949, #41403c, #514f4d);
+    background-size: 300% 300%;
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    background: linear-gradient(135deg, #4d4c4b, #484746, #555252);
+    background-size: 400% 400%;
+    transform: translateX(10px) translateY(-10px);
+  }
+ 
+}
+
+.element-class {
+  animation: backgroundAnimation 10s ease-in-out infinite;
+  background-size: 300% 300%; 
+}
+
+
+
+
+.add-book-container h2 {
+  color: #fefaff !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  animation: textGlow 1.5s infinite alternate ease-in-out;
+}
+
+
+
+.add-book-button {
+  background: linear-gradient(135deg, #4e4c4c);
+  border: none;
+  padding: 12px;
+  color: #120d0d;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.8s ease;
+  animation: buttonPulse 2s infinite ease-in-out;
+}
+
+.add-book-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #96cced, #8dcbf1);
+}
+
+
+
+.alert-message {
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.text-info {
+  color: #121004 !important;
+  text-decoration: underline;
+  animation: linkGlow 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes linkGlow {
+  from {
+    text-shadow: 0 0 8px #ff8c00;
+  }
+  to {
+    text-shadow: 0 0 16px #ffd700;
+  }
+}
+
+::placeholder {
+  color: #0a0602 !important;
+  font-style: italic;
+  animation: placeholderBlink 2s infinite alternate ease-in-out;
+}
+
+@keyframes placeholderBlink {
+  0% {
+    color: #bbb;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #bbb;
+  }
+}
